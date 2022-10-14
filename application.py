@@ -6,7 +6,7 @@ class Application:
         self.wd = webdriver.Firefox(firefox_binary="C:\\Program Files\\Mozilla Firefox\\firefox.exe")
         self.wd.implicitly_wait(30)
 
-    def open_home_page(self, wd):
+    def open_home_page(self):
         wd = self.wd
         wd.get("https://localhost/addressbook/")
 
